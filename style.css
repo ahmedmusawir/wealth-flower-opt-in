@@ -5933,7 +5933,9 @@ html {
 
 body {
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(248, 212, 150, 0.8)) left repeat;
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(248, 212, 150, 0.8)) left repeat; }
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(248, 212, 150, 0.8)) left repeat;
+  border: 1px solid #f9deae;
+  display: none; }
 
 .logo-container {
   padding-top: 10rem;
@@ -5963,6 +5965,10 @@ body {
   margin-top: 5rem;
   background-color: rgba(64, 64, 64, 0.7);
   padding: 7rem; }
+  @media (max-width: 450px) {
+    .quote-block {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
   .quote-block blockquote {
     border-left: 0; }
   .quote-block .text-block i {
@@ -5977,6 +5983,11 @@ body {
       padding-top: 3rem;
       font-size: 2rem;
       font-style: bold; }
+  @media (max-width: 450px) {
+    .quote-block .text-block i {
+      padding-bottom: 2rem; }
+    .quote-block .text-block p cite {
+      padding-bottom: 3rem; } }
 
 .bottom-form-block {
   border: 1rem solid #5f9217;
@@ -5996,13 +6007,39 @@ body {
   .bottom-form-block .form-block input[type="text"] {
     height: 6rem;
     background-color: transparent;
-    border: 4px solid #5f9217; }
+    border: 4px solid #5f9217;
+    font-size: 2rem; }
   .bottom-form-block .form-block input[type="email"] {
     height: 6rem;
     background-color: transparent;
-    border: 4px solid #5f9217; }
+    border: 4px solid #5f9217;
+    font-size: 2rem; }
   .bottom-form-block .form-block .btn.btn-success {
     padding-top: 2rem;
     padding-bottom: 2rem; }
+  .bottom-form-block .form-block ::-webkit-input-placeholder {
+    color: #5f9217;
+    text-align: center;
+    font-size: 2rem; }
+  .bottom-form-block .form-block :-moz-placeholder {
+    /* Firefox 18- */
+    color: #5f9217;
+    text-align: center;
+    font-size: 2rem; }
+  .bottom-form-block .form-block ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #5f9217;
+    text-align: center;
+    font-size: 2rem; }
+  .bottom-form-block .form-block :-ms-input-placeholder {
+    color: #5f9217;
+    text-align: center;
+    font-size: 2rem; }
+
+.disclaimer {
+  padding-top: 2rem;
+  text-align: center; }
+  .disclaimer .text {
+    padding-bottom: 1rem; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-  $( '#content' ).fadeIn(900);	
+  $( 'body' ).fadeIn(900);	
 
 	new WOW().init();
 });
